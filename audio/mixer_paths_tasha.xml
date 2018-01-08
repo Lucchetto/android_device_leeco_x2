@@ -2678,8 +2678,10 @@
     </path>
 
     <path name="voice-tx">
+        <path name="voice-headset-mic" />
     </path>
 
     <path name="voice-rx">
+        <path name="voice-headphones" />
     </path>
 </mixer>
