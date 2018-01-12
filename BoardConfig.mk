@@ -24,19 +24,20 @@
 # inherit from msm8996-common
 -include device/leeco/msm8996-common/BoardConfigCommon.mk
 
-TARGET_OTA_ASSERT_DEVICE := le_x2,LeMax2_CN,LeMax2_NA
+#TARGET_OTA_ASSERT_DEVICE := le_x2,LeMax2,LeMax2_CN,LeMax2_NA
 
 DEVICE_PATH := device/leeco/x2
 
 TARGET_SPECIFIC_HEADER_PATH += $(DEVICE_PATH)/include
 
 # Kernel
-BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 androidboot.hardware=qcom user_debug=31 msm_rtb.filter=0x237 ehci-hcd.park=3 lpm_levels.sleep_disabled=1 cma=32M@0-0xffffffff androidboot.selinux=permissive
+#BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 androidboot.hardware=qcom user_debug=31 msm_rtb.filter=0x237 ehci-hcd.park=3 lpm_levels.sleep_disabled=1 cma=32M@0-0xffffffff androidboot.selinux=permissive log_buf_len=4M
+BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom user_debug=31 msm_rtb.filter=0x237 ehci-hcd.park=3 lpm_levels.sleep_disabled=1 cma=32M@0-0xffffffff androidboot.selinux=permissive log_buf_len=4M
 BOARD_KERNEL_CMDLINE += androidboot.configfs=true
 BOARD_KERNEL_TAGS_OFFSET := 0x02000000
 BOARD_RAMDISK_OFFSET     := 0x02200000
 
-TARGET_KERNEL_CONFIG := lineage_x2_defconfig
+TARGET_KERNEL_CONFIG := x2_defconfig
 
 # Recovery/Offmode Charging
 BACKLIGHT_PATH := /sys/class/leds/lcd-backlight/brightness
@@ -46,7 +47,7 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
 
 # Partitions
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 3154116608
-BOARD_USERDATAIMAGE_PARTITION_SIZE := 57436708864
+#BOARD_USERDATAIMAGE_PARTITION_SIZE := 57436708864
 
 
 # SELinux
