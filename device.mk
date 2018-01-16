@@ -25,8 +25,8 @@ $(call inherit-product-if-exists, vendor/leeco/x2/x2-vendor.mk)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay
-#    $(LOCAL_PATH)/overlay-lineage
+    $(LOCAL_PATH)/overlay \
+    $(LOCAL_PATH)/overlay-lineage
 
 # Device uses high-density artwork where available
 PRODUCT_AAPT_CONFIG := normal
@@ -71,12 +71,19 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     thermal.msm8996
 
+# Lights
+PRODUCT_PACKAGES += \
+    lights.msm8996
+
 # VR
 PRODUCT_PACKAGES += \
-    vr.msm8996
+    vr.msm8996 \
+    android.hardware.vr@1.0-impl \
+    android.hardware.vr@1.0-service
 
 PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.hardware.vr.high_performance.xml:system/etc/permissions/android.hardware.vr.high_performance.xml
+    frameworks/native/data/etc/android.hardware.vr.high_performance.xml:system/vendor/etc/permissions/android.hardware.vr.high_performance.xml \
+    $(LOCAL_PATH)/configs/thermal-engine-vr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-vr.conf
 
 # Power
 #PRODUCT_PACKAGES += \
