@@ -32,7 +32,7 @@
 
         <device name="SND_DEVICE_OUT_VOICE_HANDSET" acdb_id="7" />
         <!-- device name="SND_DEVICE_OUT_VOICE_SPEAKER_NB" acdb_id="140" / -->
-        <device name="SND_DEVICE_OUT_BT_SCO" acdb_id="39" />
+        <!-- device name="SND_DEVICE_OUT_BT_SCO" acdb_id="39" / -->
 
 	<device name="SND_DEVICE_IN_CAMCORDER_MIC" acdb_id="4"/> <!-- 52 -->
 
