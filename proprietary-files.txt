@@ -502,7 +502,6 @@ bin/ssr_setup
 bin/tloc_daemon
 bin/hvdcp_opti
 etc/ad_calib.cfg
-etc/ad_calib_le_zl1.cfg
 etc/ad_calib_x2.cfg
 etc/batt_info_show_conf.xml
 etc/battd_psy.conf
