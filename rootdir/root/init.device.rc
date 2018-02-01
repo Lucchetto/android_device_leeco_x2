@@ -67,6 +67,9 @@ on boot
     # Chown led nodes as needed from UI running on system server
     chown system system /sys/class/leds/button-backlight/brightness
     chown system system /sys/class/leds/torch-light1/brightness
+    chmod 0666 /sys/class/leds/button-backlight/brightness
+    chmod 0666 /sys/class/leds/torch-light1/brightness
+
 
     # Chown for backlight
     chown system system /sys/class/leds/lcd-backlight/brightness
