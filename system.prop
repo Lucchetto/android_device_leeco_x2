@@ -113,7 +113,6 @@ ro.ril.hsxpa=1
 ro.ril.gprsclass=10 
 ro.ril.hsdpa.category=8 
 ro.ril.hsupa.category=6 
-persist.cust.tel.eons=1 
 
 # Wireless Speed Tweaks 
 
