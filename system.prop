@@ -49,26 +49,20 @@ persist.loc.nlp_name=com.qualcomm.location
 ro.sf.lcd_density=560
 
 # ADB or bringup!!!
-service.adb.tcp.port=5555
-ro.secure=0
-ro.adb.secure=0
+#service.adb.tcp.port=5555
+#ro.secure=1
+#ro.adb.secure=1
 
-ro.adb.secure=0
-ro.secure=0
+#ro.secure=0
 ro.debuggable=1
 #persist.sys.usb.config=mtp,adb
 persist.service.adb.enable=1
 persist.service.debuggable=1
 
-
-
+ 
 
 ro.ril.enable.amr.wideband=1 
 ro.config.hw_quickpoweron=true 
-
- # Miscellaneous Tweaks 
-
-persist.sys.NV_FPSLIMIT=60 
 
  # Disables data sent and logging 
 
@@ -87,4 +81,3 @@ wifi.supplicant_scan_interval=180
  # Dialing Tweaks 
 
 ro.telephony.call_ring.delay=0 
-ro.secure=0 
