@@ -4,8 +4,6 @@ LOCAL_PATH:= $(call my-dir)
 
 include $(CLEAR_VARS)
 
-LOCAL_CFLAGS += -DLOG_NDEBUG=0
-
 LOCAL_COPY_HEADERS_TO := qcom/camera
 LOCAL_COPY_HEADERS := QCameraFormat.h
 
@@ -30,7 +28,7 @@ LOCAL_SRC_FILES += \
         HAL3/QCamera3CropRegionMapper.cpp \
         HAL3/QCamera3StreamMem.cpp
 
-LOCAL_CFLAGS := -Wall -Wextra -Werror
+LOCAL_CFLAGS := -Wall -Wextra -Werror -DLOG_NDEBUG=0
 
 #HAL 1.0 source
 
