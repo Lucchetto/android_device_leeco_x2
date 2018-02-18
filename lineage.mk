@@ -19,17 +19,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from device
 $(call inherit-product, device/leeco/x2/device.mk)
 
-<<<<<<< HEAD
 # Inherit some common Lineage stuff.
-=======
-# Inherit some common AOSP stuff.
-TARGET_ARCH := arm64
-TARGET_DENSITY := xxxhdpi
-TARGET_BOOT_ANIMATION_RES := 1440
-TARGET_INCLUDE_ARCORE := true
-
-# Inherit some common AOSiP stuff.
->>>>>>> d7c21f40a41c28addb55df7d9b9e0670eb9f4b27
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 PRODUCT_NAME := lineage_x2
@@ -37,15 +27,12 @@ PRODUCT_DEVICE := x2
 PRODUCT_MANUFACTURER := LeEco
 PRODUCT_BRAND := LeEco
 
-<<<<<<< HEAD
 # Inherit some common AOSP stuff.
 TARGET_ARCH := arm64
 TARGET_DENSITY := xxxhdpi
 TARGET_BOOT_ANIMATION_RES := 1440
 TARGET_INCLUDE_ARCORE := true
 
-=======
->>>>>>> d7c21f40a41c28addb55df7d9b9e0670eb9f4b27
 PRODUCT_GMS_CLIENTID_BASE := leeco
 
 TARGET_VENDOR_PRODUCT_NAME := LeMax2
