@@ -58,13 +58,13 @@
         <item>10</item>
         <item>12</item>
         <item>17</item>
-        <item>23</item>
-        <item>30</item>
-        <item>40</item>
-        <item>65</item>
-        <item>95</item>
-        <item>110</item>
-        <item>142</item>
+        <item>29</item>
+        <item>35</item>
+        <item>47</item>
+        <item>75</item>
+        <item>114</item>
+        <item>130</item>
+        <item>152</item>
         <item>175</item>
         <item>200</item>
         <item>215</item>
@@ -72,20 +72,6 @@
         <item>255</item>
     </integer-array>
 
-
-    <!-- Hardware keys present on the device, stored as a bit field.
-         This integer should equal the sum of the corresponding value for each
-         of the following keys present:
-             1 - Home
-             2 - Back
-             4 - Menu
-             8 - Assistant (search)
-            16 - App switch
-            32 - Camera
-            64 - Volume rocker
-         For example, a device with Home, Back and Menu keys would set this
-         config to 7. -->
-    <integer name="config_deviceHardwareKeys">83</integer>
 
     <!-- If this is true, device supports Sustained Performance Mode. -->
     <bool name="config_sustainedPerformanceModeSupported">true</bool>
@@ -114,24 +100,4 @@
          timeout expires.  May be less than the minimum allowed brightness setting
          that can be set by the user. -->
     <integer name="config_screenBrightnessDim">5</integer>
-
-
-    <!-- Is the battery LED intrusive? Used to decide if there should be a disable option -->
-    <bool name="config_intrusiveBatteryLed">true</bool>
-
-    <!-- Does the battery LED support multiple colors? Used to decide if the user can change the colors -->
-    <bool name="config_multiColorBatteryLed">true</bool>
-
-    <bool name="config_multiColorNotificationLed">true</bool>
-    
-    <!-- Does the device supports fast charging -->
-    <bool name="config_FastChargingLedSupported">true</bool>
-
-    <!-- Default value for led color when battery is low on charge -->
-    <integer name="config_notificationsFastBatteryARGB">0x0000FF</integer>
-
-    <!-- Boolean indicating whether we want button brightness support -->
-    <bool name="config_button_brightness_support">true</bool>
-    <integer name="config_button_brightness_default">20</integer>
-
 </resources>
