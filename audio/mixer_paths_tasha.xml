@@ -1334,13 +1334,6 @@
         <path name="low-latency-record bt-sco" />
     </path>
 
-    <path name="afe-proxy-playback afe-proxy">
-    </path>
-
-    <path name="afe-proxy-record afe-proxy">
-    </path>
-
-
     <path name="low-latency-record usb-headset-mic">
         <ctl name="MultiMedia5 Mixer AFE_PCM_TX" value="1" />
     </path>
@@ -2104,7 +2097,7 @@
         <ctl name="SLIM_0_RX Channels" value="One" />
         <ctl name="RX INT0_1 MIX1 INP0" value="RX0" />
         <ctl name="RX INT0 DEM MUX" value="CLSH_DSM_OUT" />
-        <ctl name="RX0 Digital Volume" value="81" />
+        <ctl name="RX0 Digital Volume" value="93" />
         <ctl name="ANC Slot" value="6" />
         <ctl name="ADC MUX10" value="AMIC" />
         <ctl name="AMIC MUX10" value="ADC5" />
@@ -2497,7 +2490,7 @@
     </path>
 
     <path name="handset-stereo-dmic-ef">
-        <path name="handset-dmic-endfire" />
+        <path name="speaker-dmic-endfire" />
         <ctl name="ADC1 Volume" value="12" />
         <ctl name="ADC4 Volume" value="12" />
     </path>
@@ -2685,10 +2678,8 @@
     </path>
 
     <path name="voice-tx">
-        <path name="voice-headset-mic" />
     </path>
 
     <path name="voice-rx">
-        <path name="voice-headphones" />
     </path>
 </mixer>
