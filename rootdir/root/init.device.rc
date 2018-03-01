@@ -25,6 +25,18 @@
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
 
+on init
+    # to create a link for /data/fastplay
+    symlink /data/fastplay /video
+
+    # change for usb typec headset prop
+    chown media media /sys/module/snd_soc_msm8996/parameters/usb_typec_swap
+    chown media media /sys/module/snd_soc_wcd_mbhc/parameters/headset_swap_backmic
+    chown media media /sys/devices/virtual/typec/typec_device/supported_dev
+    chown media media /sys/module/cyccg/parameters/typec_headset_with_analog
+
+    export LD_SHIM_LIBS "/system/vendor/lib/libmmcamera_ppeiscore.so|libshims_camera.so:/system/bin/mm-qcamera-daemon|libshims_qcamera-daemon.so"
+
 on boot
     # change for usb typec headset prop
     #chown media media /sys/module/snd_soc_msm8996/parameters/usb_typec_swap
