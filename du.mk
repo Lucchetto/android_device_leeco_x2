@@ -19,29 +19,23 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from device
 $(call inherit-product, device/leeco/x2/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common DU stuff.
+$(call inherit-product, vendor/du/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_x2
+PRODUCT_NAME := du_x2
 PRODUCT_DEVICE := x2
-PRODUCT_MANUFACTURER := LeEco
+PRODUCT_MANUFACTURER := LeMobile
 PRODUCT_BRAND := LeEco
 
-# Inherit some common AOSP stuff.
-TARGET_ARCH := arm64
-TARGET_DENSITY := xxxhdpi
-TARGET_BOOT_ANIMATION_RES := 1440
-TARGET_INCLUDE_ARCORE := true
-
-PRODUCT_GMS_CLIENTID_BASE := leeco
+PRODUCT_GMS_CLIENTID_BASE := android-letv
 
 TARGET_VENDOR_PRODUCT_NAME := LeMax2
 TARGET_VENDOR_DEVICE_NAME := le_x2
 PRODUCT_BUILD_PROP_OVERRIDES += TARGET_DEVICE=le_x2 PRODUCT_NAME=LeMax2
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BUILD_FINGERPRINT=Letv/LeMax2_WW/le_x2:6.0.1/FGXOSOP5801910121S/letv10120105:user/release-keys \
-    PRIVATE_BUILD_DESC="le_x2-user 6.0.1 FGXOSOP5801910121S eng.letv.20161012.010150.wechatpay release-keys"
+    BUILD_FINGERPRINT=LeEco/LeMax2_NA/le_x2_na:6.0.1/FIXNAOP5801607182S/letv07181411:user/release-keys \
+    PRIVATE_BUILD_DESC="le_x2_na-user 6.0.1 FIXNAOP5801607182S eng.letv.20160718.140847 release-keys"
 
 PRODUCT_SYSTEM_PROPERTY_BLACKLIST += ro.product.model
 
