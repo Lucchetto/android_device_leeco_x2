@@ -22,7 +22,7 @@ $(call inherit-product, device/leeco/x2/device.mk)
 # Inherit some common MoKee stuff.
 $(call inherit-product, vendor/mk/config/common_full_phone.mk)
 
-PRODUCT_NAME := mokee_x2
+PRODUCT_NAME := mk_x2
 PRODUCT_DEVICE := x2
 PRODUCT_MANUFACTURER := LeEco
 PRODUCT_BRAND := LeEco
